@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "747962430455",
+    "project_id": "email-password-dfdfb",
+    "storage_bucket": "email-password-dfdfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747962430455:android:9e2090b1f9cc5e707f34f2",
+        "android_client_info": {
+          "package_name": "com.example.firebase_auth_email_and_password"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747962430455-lhm5c6ct4993potua0enlkpib1j81kr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxhMBFme_20Nrn4hkffa_odB8hoVzUxjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747962430455-lhm5c6ct4993potua0enlkpib1j81kr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
