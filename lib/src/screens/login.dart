@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_email_and_password/src/screens/home.dart';
+import 'package:firebase_auth_email_and_password/src/screens/reset.dart';
 import 'package:firebase_auth_email_and_password/src/screens/verify.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,8 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   String _email = '', _password = '';
   final auth = FirebaseAuth.instance;
+
+  var builder;
 
   @override
   Widget build(BuildContext context) {
@@ -64,12 +67,22 @@ class _LoginScreenState extends State<LoginScreen> {
                             email: _email, password: _password)
                         .then((_) {
                       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => VerifyScreen()));
+                          builder: (context) => const VerifyScreen()));
                     });
                   },
                   child: const Text('Signup')),
             ],
-          )
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) => const ResetScreen())),
+                child: const Text('Forgot Password'),
+              ),
+            ],
+          ),
         ],
       ),
     );
